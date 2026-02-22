@@ -4,8 +4,9 @@ import nuzha from "../assets/nuzha.png";
 
 const Hero = ({ setActiveTab }) => {
   const roles = [
-    "FULL STACK DEVELOPER",
+    
     "CYBER SECURITY ENTHUSIAST",
+    "FULL STACK DEVELOPER",
     "CONTENT WRITER",
   ];
 
