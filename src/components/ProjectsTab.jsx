@@ -58,8 +58,8 @@ image:"/projects/myportfoliowebsite.png",
 description:
 "A premium personal portfolio website showcasing projects and certifications.",
 tech:["React","Tailwind CSS","Framer Motion","JavaScript","HTML5","CSS3","Vercel"],
-github:"https://github.com",
-demo:"https://demo.com"
+github:"https://github.com/Fathima-Nuzha/portfolio-website",
+demo:"https://fathima-nuzha.vercel.app/"
 },
 
 ];
