@@ -252,7 +252,7 @@ rounded-3xl overflow-hidden shadow-2xl"
 
 
 <img
-
+loading="lazy"
 src={nuzha}
 
 alt="Fathima Nusha"
