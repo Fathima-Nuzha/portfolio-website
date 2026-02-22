@@ -11,7 +11,7 @@ const certifications =[
 title:"Cybersecurity Fundamentals",
 issuer:"IBM",
 image:"/certifications/cybersecurityfundementals.png",
-link:"https://www.credly.com"
+link:"https://www.credly.com/badges/741c4b5d-d264-4797-bc04-45495b1d2b3a/linked_in_profile"
 },
 
 {
@@ -25,21 +25,21 @@ link:"https://open.uom.lk/verify"
 title:"JavaScript Essentials 1",
 issuer:"CISCO NETWORKING ACADEMY",
 image:"/certifications/javascript1.png",
-link:"https://linkedin.com"
+link:"https://www.linkedin.com/posts/fathima-nusha-509ba8278_javascript-essentials-1-activity-7321944859240468480-US1f?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAEPO5tkBBihQXW9n3sw_-2-HD2S73RnlGtw&utm_campaign=copy_link"
 },
 
 {
 title:"IEEE Xtreme 18.0 Programming Competition",
 issuer:"IEEE",
 image:"/certifications/ieeextreme.png",
-link:"https://linkedin.com"
+link:"https://www.linkedin.com/posts/fathima-nusha-509ba8278_certificate-of-ieee-extreme-180-activity-7305645331721961473-bsTs?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAEPO5tkBBihQXW9n3sw_-2-HD2S73RnlGtw&utm_campaign=copy_link"
 },
 
 {
 title:"Introduction to SQL",
 issuer:"SOLOLEARN",
 image:"/certifications/introsql.png",
-link:"https://linkedin.com"
+link:"https://www.linkedin.com/posts/fathima-nusha-509ba8278_sql-continuouslearning-sololearn-activity-7251128159113265154-Mg1Y?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAEPO5tkBBihQXW9n3sw_-2-HD2S73RnlGtw&utm_campaign=copy_link"
 },
 
 {
@@ -48,7 +48,7 @@ issuer:"IEEE REGION 10",
 flip:true,
 front:"/certifications/ethicalhackchampion1.png",
 back:"/certifications/ethicalhackchampion2.png",
-link:"https://linkedin.com"
+link:"https://www.linkedin.com/posts/fathima-nusha-509ba8278_ieee-region10-ethicschampionship-activity-7251130652736040960-1UJs?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAEPO5tkBBihQXW9n3sw_-2-HD2S73RnlGtw&utm_campaign=copy_link"
 }
 
 ];
