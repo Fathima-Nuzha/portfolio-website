@@ -4,26 +4,22 @@ import nuzha from "../assets/nuzha.png";
 
 const Hero = ({ setActiveTab }) => {
 
-const roles = [
-"CYBER SECURITY ENTHUSIAST",
-"FULL STACK DEVELOPER",
-"CONTENT WRITER",
-];
+  const roles = [
+    "CYBER SECURITY ENTHUSIAST",
+    "FULL STACK DEVELOPER",
+    "CONTENT WRITER",
+  ];
 
-const handleViewProjects = () => {
-setActiveTab("projects");
+  const handleViewProjects = () => {
+    setActiveTab("projects");
+    const section = document.getElementById("work");
 
-const section = document.getElementById("work");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
-if(section){
-
-section.scrollIntoView({behavior:"smooth"});
-
-}
-
-};
-
-return(
+  return (
 
 <section
 id="hero"
@@ -31,7 +27,7 @@ className="relative min-h-screen scroll-mt-24 bg-[#0B1120]
 text-white flex items-center overflow-hidden pt-24"
 >
 
-{/* Glow */}
+{/* Background Glow */}
 
 <div className="absolute w-[700px] h-[700px] bg-blue-500/20 blur-[200px]
 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-pulse"/>
@@ -42,31 +38,29 @@ className="max-w-7xl mx-auto px-6
 
 grid grid-cols-1 md:grid-cols-2
 
-gap-12 md:gap-16
+gap-14 md:gap-16
 
 items-center relative z-10"
 >
 
-{/* ================= LEFT ================= */}
+{/* ================= LEFT SIDE ================= */}
 
 <motion.div
-
-initial={{opacity:0,x:-80}}
-
-animate={{opacity:1,x:0}}
-
-transition={{duration:1}}
+initial={{ opacity: 0, x: -80 }}
+animate={{ opacity: 1, x: 0 }}
+transition={{ duration: 1 }}
 
 className="text-center md:text-left"
-
 >
+
+{/* NAME */}
 
 <h2
 className="text-4xl sm:text-5xl md:text-7xl
 font-bold leading-tight"
 >
 
-Hi, I’m <br/>
+Hi, I’m <br />
 
 <span className="text-blue-500">
 
@@ -86,6 +80,7 @@ typeSpeed={100}
 
 <div
 className="mt-8 flex flex-wrap gap-4
+
 justify-center md:justify-start"
 >
 
@@ -95,9 +90,9 @@ justify-center md:justify-start"
 
 key={index}
 
-initial={{y:-300,opacity:0,scale:.9}}
+initial={{ y:-300, opacity:0, scale:.9 }}
 
-animate={{y:0,opacity:1,scale:1}}
+animate={{ y:0, opacity:1, scale:1 }}
 
 transition={{
 
@@ -158,10 +153,11 @@ mx-auto md:mx-0"
 >
 
 Cybersecurity-driven IT undergraduate passionate about secure
-systems, networking and modern full-stack development focused
-on real-world solutions.
+systems, networking and modern full-stack development focused on
+real-world solutions.
 
 </p>
+
 
 
 {/* BUTTONS */}
@@ -180,8 +176,8 @@ justify-center md:justify-start"
 
 onClick={handleViewProjects}
 
-className="px-8 py-3 border border-blue-500 text-blue-400
-rounded-full font-semibold
+className="px-8 py-3 border border-blue-500
+text-blue-400 rounded-full font-semibold
 
 hover:bg-blue-500 hover:text-white
 
@@ -196,14 +192,15 @@ View Projects
 </button>
 
 
+
 <a
 
 href="/Fathima_Nusha_Resume.pdf"
 
 download="Fathima_Nusha_Resume"
 
-className="px-8 py-3 border border-blue-500 text-blue-400
-rounded-full
+className="px-8 py-3 border border-blue-500
+text-blue-400 rounded-full
 
 hover:bg-blue-500 hover:text-white
 
@@ -221,7 +218,7 @@ Download CV
 
 
 
-{/* ================= IMAGE ================= */}
+{/* ================= RIGHT IMAGE ================= */}
 
 <motion.div
 
@@ -231,7 +228,7 @@ animate={{opacity:1,y:0}}
 
 transition={{duration:1.2}}
 
-className="flex justify-center"
+className="flex justify-center order-first md:order-last"
 
 >
 
@@ -243,15 +240,16 @@ transition={{duration:4,repeat:Infinity}}
 
 className="relative
 
-w-[250px] h-[330px]
+w-[240px] h-[320px]
 
-sm:w-[300px] sm:h-[390px]
+sm:w-[280px] sm:h-[360px]
 
 md:w-[320px] md:h-[420px]
 
 rounded-3xl overflow-hidden shadow-2xl"
 
 >
+
 
 <img
 
@@ -263,8 +261,10 @@ className="w-full h-full object-cover object-top"
 
 />
 
+
 <div className="absolute inset-0 bg-gradient-to-t
 from-black/70 via-black/20 to-transparent"/>
+
 
 <p className="absolute bottom-4 left-4 text-white text-sm flex items-center">
 
@@ -282,8 +282,7 @@ Open to Work
 
 </section>
 
-);
-
+  );
 };
 
 export default Hero;
