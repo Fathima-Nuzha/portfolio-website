@@ -42,14 +42,12 @@ image:"/certifications/introsql.png",
 link:"https://linkedin.com"
 },
 
-// DOUBLE SIDE CERTIFICATE
-
 {
 title:"IEEE Region 10 Ethics Champion",
 issuer:"IEEE REGION 10",
 flip:true,
 front:"/certifications/ethicalhackchampion1.png",
-back:"/certifications/ethicalhackchampion2.png", // ✅ FIXED SPACE BUG
+back:"/certifications/ethicalhackchampion2.png",
 link:"https://linkedin.com"
 }
 
@@ -65,9 +63,21 @@ return(
 
 <>
 
-{/* GRID (PROJECT STYLE ALIGNMENT) */}
+{/* GRID */}
 
-<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+<div
+className="
+
+grid
+grid-cols-1
+sm:grid-cols-2
+lg:grid-cols-3
+
+gap-7 sm:gap-10
+
+px-4 sm:px-0
+
+">
 
 {certifications.map((cert,index)=>(
 
@@ -79,12 +89,7 @@ initial={{opacity:0,y:40}}
 
 whileInView={{opacity:1,y:0}}
 
-transition={{
-
-duration:.6,
-delay:index*.12
-
-}}
+transition={{duration:.6,delay:index*.12}}
 
 viewport={{once:true}}
 
@@ -95,9 +100,7 @@ onClick={()=>setSelected(cert)}
 className="group cursor-pointer rounded-3xl
 
 bg-gradient-to-b
-
 from-[#111827]
-
 to-[#0B1120]
 
 border border-blue-500/20
@@ -112,19 +115,21 @@ transition"
 
 >
 
-
-{/* IMAGE FRAME */}
+{/* IMAGE */}
 
 <div
 
-className="bg-[#0B1120] rounded-2xl overflow-hidden h-40 m-5 flex justify-center items-center"
+className="bg-[#0B1120] rounded-2xl overflow-hidden
+
+h-44 sm:h-40
+
+m-4 sm:m-5
+
+flex justify-center items-center"
 
 style={{perspective:"1200px"}}
 
 >
-
-
-{/* ⭐ FLIP ONLY ONCE */}
 
 <motion.div
 
@@ -154,7 +159,6 @@ position:"relative"
 
 >
 
-
 {/* FRONT */}
 
 <img
@@ -172,7 +176,6 @@ WebkitBackfaceVisibility:"hidden"
 className="absolute w-full h-full object-contain p-2"
 
 />
-
 
 {/* BACK */}
 
@@ -202,7 +205,7 @@ className="absolute w-full h-full object-contain p-2"
 
 {/* TEXT */}
 
-<div className="px-6 pb-6 flex justify-between items-center">
+<div className="px-5 sm:px-6 pb-6 flex justify-between items-center gap-2">
 
 <div>
 
@@ -212,7 +215,11 @@ className="absolute w-full h-full object-contain p-2"
 
 </p>
 
-<h3 className="mt-2 font-semibold text-lg text-gray-200 group-hover:text-white transition">
+<h3 className="mt-2 font-semibold
+
+text-base sm:text-lg
+
+text-gray-200 group-hover:text-white transition">
 
 {cert.title}
 
@@ -223,9 +230,9 @@ className="absolute w-full h-full object-contain p-2"
 
 <button
 
-className="border border-blue-500 px-5 py-2 rounded-full
+className="border border-blue-500 px-4 sm:px-5 py-2 rounded-full
 
-text-sm
+text-xs sm:text-sm
 
 text-blue-400
 
@@ -268,7 +275,13 @@ animate={{opacity:1}}
 
 exit={{opacity:0}}
 
-className="fixed inset-0 bg-black/80 backdrop-blur-sm flex justify-center items-center z-50"
+className="fixed inset-0 bg-black/80 backdrop-blur-sm
+
+flex justify-center items-center
+
+p-4
+
+z-50"
 
 >
 
@@ -290,12 +303,19 @@ animate={{scale:1,opacity:1}}
 
 exit={{scale:.85,opacity:0}}
 
-className="relative w-[92%] max-w-xl rounded-3xl overflow-hidden
+className="relative
+
+w-full
+max-w-xl
+
+max-h-[90vh]
+
+overflow-y-auto
+
+rounded-3xl overflow-hidden
 
 bg-gradient-to-b
-
 from-[#111827]
-
 to-[#0B1120]
 
 border border-blue-500/30
@@ -319,7 +339,7 @@ className="absolute top-4 right-4 bg-blue-500 text-white font-bold w-9 h-9 round
 
 
 
-<div className="h-64 bg-[#0B1120] flex justify-center items-center">
+<div className="h-52 sm:h-64 bg-[#0B1120] flex justify-center items-center">
 
 <img
 
@@ -333,15 +353,15 @@ className="w-full h-full object-contain"
 
 
 
-<div className="p-8">
+<div className="p-6 sm:p-8">
 
-<h3 className="text-2xl font-bold text-white">
+<h3 className="text-xl sm:text-2xl font-bold text-white">
 
 {selected.title}
 
 </h3>
 
-<p className="text-blue-400 mt-1">
+<p className="text-blue-400 mt-1 text-sm sm:text-base">
 
 {selected.issuer}
 
@@ -357,7 +377,7 @@ target="_blank"
 
 rel="noopener noreferrer"
 
-className="mt-6 inline-flex gap-3 items-center
+className="mt-6 flex justify-center items-center gap-3
 
 bg-blue-500 text-white font-semibold
 
