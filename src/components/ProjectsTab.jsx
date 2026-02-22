@@ -37,7 +37,7 @@ description:
 "Role-based secure university academic result management system.",
 tech:["Spring Boot","React","MongoDB","Postman"],
 github:"https://github.com/Fathima-Nuzha/University-results-management-system",
-demo:"https://www.linkedin.com"
+demo:"https://www.linkedin.com/posts/fathima-nusha-509ba8278_universityofvavuniya-misproject-resultmanagementsystem-activity-7345798082074243072-sohk?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAEPO5tkBBihQXW9n3sw_-2-HD2S73RnlGtw&utm_campaign=copy_link"
 },
 
 {
