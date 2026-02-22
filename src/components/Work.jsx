@@ -8,7 +8,8 @@ const Work = ({ activeTab, setActiveTab }) => {
   return (
     <section
       id="work"
-      className="min-h-screen scroll-mt-24 bg-[#0B1120] text-white py-28 px-6"
+      className="min-h-screen scroll-mt-24 bg-[#0B1120] text-white 
+      py-20 md:py-28 px-4 sm:px-6"
     >
       <div className="max-w-7xl mx-auto">
 
@@ -18,28 +19,37 @@ const Work = ({ activeTab, setActiveTab }) => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12 md:mb-16"
         >
 
-          <h2 className="text-5xl md:text-6xl font-bold tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight">
             MY <span className="text-blue-500">TECH JOURNEY</span>
           </h2>
 
-          <p className="text-gray-400 mt-4 tracking-widest text-sm">
+          <p className="text-gray-400 mt-4 tracking-widest text-xs sm:text-sm">
             REAL PROJECTS • CONTINUOUS LEARNING • PRACTICAL EXPERIENCE
           </p>
 
         </motion.div>
 
         {/* Tabs */}
-        <div className="flex justify-center gap-10 mb-16 text-sm md:text-base font-medium uppercase">
+        <div
+          className="
+          flex justify-center
+          gap-6 md:gap-10
+          mb-12 md:mb-16
+          text-xs sm:text-sm md:text-base
+          font-medium uppercase
+          flex-wrap
+          "
+        >
 
           {["projects", "certifications", "techstack"].map((tab) => (
 
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`relative transition duration-300 ${
+              className={`relative transition duration-300 px-2 py-1 ${
                 activeTab === tab
                   ? "text-blue-400"
                   : "text-gray-400 hover:text-white"
