@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
-import nuzha from "../assets/nuzha.png";
+import nuzha from "../assets/nuzha.webp";
 
 const Hero = ({ setActiveTab }) => {
 
